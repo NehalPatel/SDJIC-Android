@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SDJIC</string>
+    <string name="sdj_intertnational_college">SDJ International College</string>
+    <string name="student_name">Student Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="save_student">Save Student</string>
+</resources>
