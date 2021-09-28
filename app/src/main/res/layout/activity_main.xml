@@ -19,84 +19,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editTextName"
+    <Button
+        android:id="@+id/buttonToastDemo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:ems="10"
-        android:hint="@string/student_name"
-        android:importantForAutofill="no"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
+        android:onClick="onToastButtonClick"
+        android:text="Toast Demo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="TextContrastCheck" />
-
-    <EditText
-        android:id="@+id/editTextEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:ems="10"
-        android:hint="@string/email_address"
-        android:importantForAutofill="no"
-        android:inputType="textEmailAddress"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextName"
-        tools:ignore="TextContrastCheck" />
-
-    <EditText
-        android:id="@+id/editTextPhone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:ems="10"
-        android:hint="@string/phone_number"
-        android:importantForAutofill="no"
-        android:inputType="phone"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEmail"
-        tools:ignore="TextContrastCheck" />
-
-    <EditText
-        android:id="@+id/editTextDOB"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:ems="10"
-        android:hint="@string/date_of_birth"
-        android:importantForAutofill="no"
-        android:inputType="date"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/buttonSave"
+        android:id="@+id/buttonCustomToastDemo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="32dp"
-        android:text="@string/save_student"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:onClick="onCustomToastButtonClick"
+        android:text="Custom Toast Demo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonToastDemo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

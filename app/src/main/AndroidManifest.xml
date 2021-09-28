@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SDJIC">
         <activity
+            android:name=".CustomToastActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ToastDemoActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
