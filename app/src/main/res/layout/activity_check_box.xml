@@ -6,4 +6,51 @@
     android:layout_height="match_parent"
     tools:context=".CheckBoxActivity">
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/check_box_demo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/tea_10_rs"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <CheckBox
+        android:id="@+id/checkBoxCoffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/coffee_20_rs"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxTea"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxTea" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/pizza_100_rs"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxCoffee"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxCoffee" />
+
+    <Button
+        android:id="@+id/buttonPlaceOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="onPlaceOrderClick"
+        android:text="@string/place_order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxPizza" />
 </androidx.constraintlayout.widget.ConstraintLayout>

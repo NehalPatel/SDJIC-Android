@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidProjects/SDJIC/app/src/main/res/layout/activity_check_box.xml" value="0.36666666666666664" />
         <entry key="..\:/AndroidProjects/SDJIC/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/AndroidProjects/SDJIC/app/src/main/res/layout/activity_toggle_button.xml" value="0.36666666666666664" />
         <entry key="app/src/main/res/layout/activity_check_box.xml" value="0.25226449275362317" />
         <entry key="app/src/main/res/layout/activity_custom_toast.xml" value="0.254981884057971" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
