@@ -23,4 +23,15 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(getApplicationContext(), CustomToastActivity.class);
         startActivity(i);
     }
+
+    public void onToggleButtonClick(View view){
+        Intent i = new Intent(getApplicationContext(), ToggleButtonActivity.class);
+        startActivity(i);
+    }
+
+    public void onCheckboxButtonClick(View view){
+        Intent i = new Intent(getApplicationContext(), CheckBoxActivity.class);
+        startActivity(i);
+    }
+
 }
