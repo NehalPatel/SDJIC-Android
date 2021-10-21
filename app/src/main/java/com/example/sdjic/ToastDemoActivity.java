@@ -35,10 +35,9 @@ public class ToastDemoActivity extends AppCompatActivity {
             name.setError("Please provide a valid name");
             return;
         }
-
         
 
-        String detail = "Name:" + name.getText().toString() + "\n Email:" + email.getText().toString() + "\n Mobile:" + mobile.getText().toString()+ "\n DOB:" + dob.getText().toString();;
+        String detail = "Name:" + name.getText().toString() + "\n Email:" + email.getText().toString() + "\n Mobile:" + mobile.getText().toString()+ "\n DOB:" + dob.getText().toString();
 
         Toast.makeText(getApplicationContext(), detail, Toast.LENGTH_LONG).show();
     }

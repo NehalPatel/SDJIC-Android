@@ -32,7 +32,7 @@ public class CustomToastActivity extends AppCompatActivity {
 //        tvName.setText( name.getText().toString() );
 
         toast.setDuration(Toast.LENGTH_LONG);
-        toast.setGravity(Gravity.TOP, 0, 100);
+        toast.setGravity(Gravity.TOP, 0, 500);
         toast.setView(customtoast);
         toast.show();
     }

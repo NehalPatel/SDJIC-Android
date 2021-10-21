@@ -19,7 +19,7 @@
         android:paddingEnd="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
-        android:text="Custom Text"
+        android:text="SDJ International College"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         android:textStyle="bold"
