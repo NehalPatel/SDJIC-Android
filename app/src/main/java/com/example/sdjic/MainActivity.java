@@ -34,4 +34,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void onAlertButtonOnClick(View view)
+    {
+        Intent i = new Intent(getApplicationContext(), AlertDialogActivity.class);
+        startActivity(i);
+    }
+
 }
