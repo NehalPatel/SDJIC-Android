@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SDJIC">
         <activity
+            android:name=".SpinnerActivity"
+            android:exported="false" />
+        <activity
             android:name=".AlertDialogActivity"
             android:exported="true" />
         <activity

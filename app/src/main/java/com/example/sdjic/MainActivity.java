@@ -40,4 +40,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void onSpinnerButtonClick(View view)
+    {
+        Intent i = new Intent(getApplicationContext(), SpinnerActivity.class);
+        startActivity(i);
+    }
+
 }

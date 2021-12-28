@@ -25,6 +25,8 @@ public class AlertDialogActivity extends AppCompatActivity {
 
     public void onCloseButtonClicked(View view)
     {
+//        builder.setMessage("Are you sure want to perform?").setTitle("Confirm Action").show();
+
         builder.setMessage("Are you sure?")
                 .setTitle("Close Application")
                 .setCancelable(false)
