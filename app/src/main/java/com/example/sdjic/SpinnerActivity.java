@@ -29,9 +29,8 @@ public class SpinnerActivity extends AppCompatActivity implements AdapterView.On
     }
 
     @Override
-    public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
-        Log.d("nehal", countries[position]);
-        Toast.makeText(getApplicationContext(), countries[position], Toast.LENGTH_LONG).show();
+    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+        Toast.makeText(getApplicationContext(), countries[i].toString(), Toast.LENGTH_LONG).show();
     }
 
     @Override

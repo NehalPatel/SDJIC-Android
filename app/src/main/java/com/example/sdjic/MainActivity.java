@@ -46,4 +46,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void onListViewButtonClick(View view)
+    {
+        Intent i = new Intent(getApplicationContext(), ListActivity.class);
+        startActivity(i);
+    }
+
 }
