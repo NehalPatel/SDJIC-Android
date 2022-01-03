@@ -8,6 +8,8 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
+    Intent i;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -15,41 +17,46 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onToastButtonClick(View view){
-        Intent i = new Intent(getApplicationContext(), ToastDemoActivity.class);
+        i = new Intent(getApplicationContext(), ToastDemoActivity.class);
         startActivity(i);
     }
 
     public void onCustomToastButtonClick(View view){
-        Intent i = new Intent(getApplicationContext(), CustomToastActivity.class);
+        i = new Intent(getApplicationContext(), CustomToastActivity.class);
         startActivity(i);
     }
 
     public void onToggleButtonClick(View view){
-        Intent i = new Intent(getApplicationContext(), ToggleButtonActivity.class);
+        i = new Intent(getApplicationContext(), ToggleButtonActivity.class);
         startActivity(i);
     }
 
     public void onCheckboxButtonClick(View view){
-        Intent i = new Intent(getApplicationContext(), CheckBoxActivity.class);
+        i = new Intent(getApplicationContext(), CheckBoxActivity.class);
         startActivity(i);
     }
 
     public void onAlertButtonOnClick(View view)
     {
-        Intent i = new Intent(getApplicationContext(), AlertDialogActivity.class);
+        i = new Intent(getApplicationContext(), AlertDialogActivity.class);
         startActivity(i);
     }
 
     public void onSpinnerButtonClick(View view)
     {
-        Intent i = new Intent(getApplicationContext(), SpinnerActivity.class);
+        i = new Intent(getApplicationContext(), SpinnerActivity.class);
         startActivity(i);
     }
 
     public void onListViewButtonClick(View view)
     {
-        Intent i = new Intent(getApplicationContext(), ListActivity.class);
+        i = new Intent(getApplicationContext(), ListActivity.class);
         startActivity(i);
     }
 
+    public void onCustomListViewButtonClick(View view)
+    {
+        i = new Intent(getApplicationContext(), CustomlistActivity.class);
+        startActivity(i);
+    }
 }

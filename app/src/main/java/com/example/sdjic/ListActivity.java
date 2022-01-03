@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class ListActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
+public class ListActivity extends AppCompatActivity{
 
     ArrayList<String> products = new ArrayList<>();
 
@@ -31,11 +31,12 @@ public class ListActivity extends AppCompatActivity implements AdapterView.OnIte
         ArrayAdapter<String> productAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, products);
         productList.setAdapter(productAdapter);
 
-    }
+        productList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Toast.makeText(getApplicationContext(), products.get(i).toString(), Toast.LENGTH_SHORT).show();
+            }
+        });
 
-    @Override
-    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-        Log.d("nehal", products.get(i).toString());
-        Toast.makeText(getApplicationContext(), products.get(i).toString(), Toast.LENGTH_SHORT).show();
     }
 }
