@@ -2,7 +2,10 @@ package com.example.sdjic;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 public class CustomlistActivity extends AppCompatActivity {
@@ -19,5 +22,16 @@ public class CustomlistActivity extends AppCompatActivity {
         UserListAdapter adapter = new UserListAdapter(this, userNames, subjects, imgid);
         ListView list = findViewById(R.id.lstUsers);
         list.setAdapter(adapter);
+
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent profileIntent = new Intent(getApplicationContext(), ProfileActivity.class);
+                profileIntent.putExtra("username", userNames[i]);
+                profileIntent.putExtra("subject",subjects[i]);
+                profileIntent.putExtra("userImg", imgid[i]);
+                startActivity(profileIntent);
+            }
+        });
     }
 }

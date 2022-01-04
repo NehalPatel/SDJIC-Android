@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SDJIC">
         <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".CustomlistActivity"
             android:exported="false" />
         <activity
