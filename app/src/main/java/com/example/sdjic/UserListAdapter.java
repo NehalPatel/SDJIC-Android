@@ -15,15 +15,15 @@ public class UserListAdapter extends ArrayAdapter<String> {
 
     private final Activity context;
     private final String[] users;
-    private final String[] designations;
+    private final String[] subjects;
     private final Integer[] imgIds;
 
 
-    public UserListAdapter(Activity context, String[] users, String[] designations, Integer[] imgIds) {
+    public UserListAdapter(Activity context, String[] users, String[] subjects, Integer[] imgIds) {
         super(context, R.layout.custom_list_item, users);
         this.context = context;
         this.users = users;
-        this.designations = designations;
+        this.subjects = subjects;
         this.imgIds = imgIds;
     }
 
@@ -35,11 +35,11 @@ public class UserListAdapter extends ArrayAdapter<String> {
         View rowView = inflater.inflate(R.layout.custom_list_item, null, true);
 
         TextView userName = rowView.findViewById(R.id.userName);
-        TextView designation = rowView.findViewById(R.id.designation);
+        TextView designation = rowView.findViewById(R.id.subject);
         ImageView userImg = rowView.findViewById(R.id.userImage);
 
         userName.setText(users[position]);
-        designation.setText(designations[position]);
+        designation.setText(subjects[position]);
         userImg.setImageResource(imgIds[position]);
 
         return rowView;
