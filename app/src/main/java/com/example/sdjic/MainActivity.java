@@ -59,4 +59,10 @@ public class MainActivity extends AppCompatActivity {
         i = new Intent(getApplicationContext(), CustomlistActivity.class);
         startActivity(i);
     }
+
+    public void onDateTimeButtonClick(View view)
+    {
+        i = new Intent(getApplicationContext(), DateActivity.class);
+        startActivity(i);
+    }
 }

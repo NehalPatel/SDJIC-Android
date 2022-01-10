@@ -84,6 +84,13 @@
                 android:onClick="onCustomListViewButtonClick"
                 android:text="Custom List View Demo" />
 
+            <Button
+                android:id="@+id/btnDTPicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onDateTimeButtonClick"
+                android:text="Date / Time Demo" />
+
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
