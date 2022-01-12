@@ -25,11 +25,11 @@ public class CustomlistActivity extends AppCompatActivity {
 
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 Intent profileIntent = new Intent(getApplicationContext(), ProfileActivity.class);
-                profileIntent.putExtra("username", userNames[i]);
-                profileIntent.putExtra("subject",subjects[i]);
-                profileIntent.putExtra("userImg", imgid[i]);
+                profileIntent.putExtra("username", userNames[position]);
+                profileIntent.putExtra("subject",subjects[position]);
+                profileIntent.putExtra("userImg", imgid[position]);
                 startActivity(profileIntent);
             }
         });

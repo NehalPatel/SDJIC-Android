@@ -1,6 +1,7 @@
 package com.example.sdjic;
 
 import android.app.Activity;
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -35,11 +36,11 @@ public class UserListAdapter extends ArrayAdapter<String> {
         View rowView = inflater.inflate(R.layout.custom_list_item, null, true);
 
         TextView userName = rowView.findViewById(R.id.userName);
-        TextView designation = rowView.findViewById(R.id.subject);
+        TextView subjectname = rowView.findViewById(R.id.subject);
         ImageView userImg = rowView.findViewById(R.id.userImage);
 
         userName.setText(users[position]);
-        designation.setText(subjects[position]);
+        subjectname.setText(subjects[position]);
         userImg.setImageResource(imgIds[position]);
 
         return rowView;
