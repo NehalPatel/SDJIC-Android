@@ -1,10 +1,10 @@
 package com.example.sdjic;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -54,15 +54,18 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-    public void onCustomListViewButtonClick(View view)
-    {
+    public void onCustomListViewButtonClick(View view) {
         i = new Intent(getApplicationContext(), CustomlistActivity.class);
         startActivity(i);
     }
 
-    public void onDateTimeButtonClick(View view)
-    {
+    public void onDateButtonClick(View view) {
         i = new Intent(getApplicationContext(), DateActivity.class);
+        startActivity(i);
+    }
+
+    public void onTimeButtonClick(View view) {
+        i = new Intent(getApplicationContext(), TimeActivity.class);
         startActivity(i);
     }
 }

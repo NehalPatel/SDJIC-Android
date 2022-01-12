@@ -2,7 +2,6 @@
 
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -88,8 +87,15 @@
                 android:id="@+id/btnDTPicker"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="onDateTimeButtonClick"
-                android:text="Date / Time Demo" />
+                android:onClick="onDateButtonClick"
+                android:text="Date Demo" />
+
+            <Button
+                android:id="@+id/btnTPicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onTimeButtonClick"
+                android:text="Time Demo" />
 
         </LinearLayout>
     </ScrollView>
