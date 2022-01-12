@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SDJIC">
         <activity
+            android:name=".ProgressBarActivity"
+            android:exported="true" />
+        <activity
             android:name=".TimeActivity"
             android:exported="false" />
         <activity

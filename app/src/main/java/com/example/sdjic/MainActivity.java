@@ -68,4 +68,9 @@ public class MainActivity extends AppCompatActivity {
         i = new Intent(getApplicationContext(), TimeActivity.class);
         startActivity(i);
     }
+
+    public void onProgressClick(View view) {
+        i = new Intent(getApplicationContext(), ProgressBarActivity.class);
+        startActivity(i);
+    }
 }
