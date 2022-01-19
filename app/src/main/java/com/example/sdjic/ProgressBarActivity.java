@@ -1,21 +1,25 @@
 package com.example.sdjic;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.ProgressDialog;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.View;
+import android.widget.ProgressBar;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class ProgressBarActivity extends AppCompatActivity {
 
     ProgressDialog progress;
-    Handler progressHandler = new Handler();
+    ProgressBar p1, p2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_progress_bar);
+
+        p1 = findViewById(R.id.progressBar1);
+        p2 = findViewById(R.id.progressBar2);
+        p2.setVisibility(View.INVISIBLE);
     }
 
     public void onProgressClick(View view) {
@@ -28,21 +32,53 @@ public class ProgressBarActivity extends AppCompatActivity {
         progress.setProgress(0);
         progress.show();
 
-//        try {
-//            progressHandler.post(new Runnable() {
-//                @Override
-//                public void run() {
-//                    for (int i=0; i<=100; i++)
-//                    {
-//                        progress.setProgress(i);
-//                        Thread.sleep(1000);
-//                    }
-//                }
-//            });
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
+        final int totalProgressTime = 100;
+        final Thread t = new Thread() {
+            @Override
+            public void run() {
+                int jumpTime = 0;
+
+                while (jumpTime < totalProgressTime) {
+                    try {
+                        sleep(200);
+                        jumpTime += 5;
+                        progress.setProgress(jumpTime);
+                    } catch (InterruptedException e) {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                    }
+                }
+                progress.dismiss();
+            }
+        };
+        t.start();
 
 
+    }
+
+    public void doProgress(View view) {
+        final int totalProgressTime = 100;
+        p2.setVisibility(View.VISIBLE);
+
+        final Thread t = new Thread() {
+            @Override
+            public void run() {
+                int jumpTime = 0;
+
+                while (jumpTime < totalProgressTime) {
+                    try {
+                        sleep(200);
+                        jumpTime += 5;
+                        p1.setProgress(jumpTime);
+                        p2.setProgress(jumpTime);
+                    } catch (InterruptedException e) {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                    }
+                }
+                p2.setVisibility(View.INVISIBLE);
+            }
+        };
+        t.start();
     }
 }
