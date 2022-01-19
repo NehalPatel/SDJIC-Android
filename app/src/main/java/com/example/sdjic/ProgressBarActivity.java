@@ -1,11 +1,11 @@
 package com.example.sdjic;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class ProgressBarActivity extends AppCompatActivity {
 
@@ -28,20 +28,26 @@ public class ProgressBarActivity extends AppCompatActivity {
         progress.setProgress(0);
         progress.show();
 
-//        try {
-//            progressHandler.post(new Runnable() {
-//                @Override
-//                public void run() {
-//                    for (int i=0; i<=100; i++)
-//                    {
-//                        progress.setProgress(i);
-//                        Thread.sleep(1000);
-//                    }
-//                }
-//            });
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
+        final int totalProgressTime = 100;
+        final Thread t = new Thread() {
+            @Override
+            public void run() {
+                int jumpTime = 0;
+
+                while (jumpTime < totalProgressTime) {
+                    try {
+                        sleep(200);
+                        jumpTime += 5;
+                        progress.setProgress(jumpTime);
+                    } catch (InterruptedException e) {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                    }
+                }
+                progress.dismiss();
+            }
+        };
+        t.start();
 
 
     }
