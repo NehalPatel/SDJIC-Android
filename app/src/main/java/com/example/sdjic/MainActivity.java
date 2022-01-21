@@ -73,4 +73,14 @@ public class MainActivity extends AppCompatActivity {
         i = new Intent(getApplicationContext(), ProgressBarActivity.class);
         startActivity(i);
     }
+
+    public void onVerticalScrollClick(View view) {
+        i = new Intent(getApplicationContext(), VerticalActivity.class);
+        startActivity(i);
+    }
+
+    public void onHorizontalScrollClick(View view) {
+        i = new Intent(getApplicationContext(), HorizontalActivity.class);
+        startActivity(i);
+    }
 }

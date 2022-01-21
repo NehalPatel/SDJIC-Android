@@ -103,6 +103,20 @@
                 android:onClick="onProgressClick"
                 android:text="Progress Bar Demo" />
 
+            <Button
+                android:id="@+id/btnVerticalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onVerticalScrollClick"
+                android:text="Vertical Scrollview Demo" />
+
+            <Button
+                android:id="@+id/btnHorizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onHorizontalScrollClick"
+                android:text="Horizontal Scrollview Demo" />
+
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
