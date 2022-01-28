@@ -63,18 +63,14 @@ public class ProgressBarActivity extends AppCompatActivity {
         final Thread t = new Thread() {
             @Override
             public void run() {
-                int jumpTime = 0;
-
-                while (jumpTime < totalProgressTime) {
-                    try {
+                try {
+                    for (int i = 0; i <= totalProgressTime; i++) {
                         sleep(200);
-                        jumpTime += 5;
-                        p1.setProgress(jumpTime);
-                        p2.setProgress(jumpTime);
-                    } catch (InterruptedException e) {
-                        // TODO Auto-generated catch block
-                        e.printStackTrace();
+                        p1.setProgress(i);
+                        p2.setProgress(i);
                     }
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
                 }
                 p2.setVisibility(View.INVISIBLE);
             }
