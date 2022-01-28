@@ -31,12 +31,27 @@
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <Button
+        android:id="@+id/btnImageSwitcherNext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="32dp"
         android:text="Next"
-        app:layout_constraintTop_toBottomOf="@id/imgSwitcher"/>
+        android:onClick="onNextBtnClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgSwitcher" />
+
+    <TextView
+        android:id="@+id/imageCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="0/0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnImageSwitcherNext" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
