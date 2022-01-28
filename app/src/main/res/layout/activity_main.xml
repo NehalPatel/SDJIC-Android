@@ -117,6 +117,13 @@
                 android:onClick="onHorizontalScrollClick"
                 android:text="Horizontal Scrollview Demo" />
 
+            <Button
+                android:id="@+id/btnImageSwitcher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onImageSwitcherClick"
+                android:text="Image Switcher Demo" />
+
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

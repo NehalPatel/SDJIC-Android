@@ -30,6 +30,8 @@
         <entry key="app/src/main/res/layout/activity_check_box.xml" value="0.25226449275362317" />
         <entry key="app/src/main/res/layout/activity_custom_toast.xml" value="0.254981884057971" />
         <entry key="app/src/main/res/layout/activity_customlist.xml" value="0.1721014492753623" />
+        <entry key="app/src/main/res/layout/activity_date.xml" value="0.13703140830800406" />
+        <entry key="app/src/main/res/layout/activity_image_switcher.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_list.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.25" />
