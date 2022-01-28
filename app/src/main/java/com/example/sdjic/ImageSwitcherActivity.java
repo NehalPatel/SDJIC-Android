@@ -38,7 +38,7 @@ public class ImageSwitcherActivity extends AppCompatActivity {
             @Override
             public View makeView() {
                 ImageView imageView = new ImageView(getApplicationContext());
-                imageView.setLayoutParams(new FrameLayout.LayoutParams(
+                imageView.setLayoutParams(new ImageSwitcher.LayoutParams(
                         ActionBar.LayoutParams.MATCH_PARENT, ActionBar.LayoutParams.MATCH_PARENT
                 ));
 
@@ -62,6 +62,16 @@ public class ImageSwitcherActivity extends AppCompatActivity {
 
         if(counter > userProfiles.length-1)
             counter=0;
+
+        imgSwitcher.setImageResource(userProfiles[counter]);
+        imgCounter.setText(counter+1 +"/" + userProfiles.length);
+    }
+
+    public void onPrevBtnClick(View view) {
+        counter--;
+
+        if(counter < 0)
+            counter = userProfiles.length-1;
 
         imgSwitcher.setImageResource(userProfiles[counter]);
         imgCounter.setText(counter+1 +"/" + userProfiles.length);
