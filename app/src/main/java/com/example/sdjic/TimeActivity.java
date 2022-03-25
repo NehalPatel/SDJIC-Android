@@ -11,6 +11,8 @@ import android.widget.TimePicker;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 
+import com.example.sdjic.support.TimePickerFragment;
+
 public class TimeActivity extends AppCompatActivity implements TimePickerDialog.OnTimeSetListener {
 
     TextView txtCurrentTime;

@@ -1,18 +1,20 @@
 package com.example.sdjic;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.sdjic.support.UserListAdapter;
+
 public class CustomlistActivity extends AppCompatActivity {
 
-    String[] userNames = {"Vimal Vaiwala","Nidhi Desai", "Nainesh Gatyiawala", "Chirag Prajapati", "Krishna Vaidya"};
+    String[] userNames = {"Vimal Vaiwala", "Nidhi Desai", "Nainesh Gatyiawala", "Chirag Prajapati", "Krishna Vaidya"};
     String[] subjects = {"Computer Graphics", ".NET Framework", "Java Programming", "Web Development", "RDBMS"};
-    Integer[] imgid = {R.drawable.vv,R.drawable.nd,R.drawable.ng,R.drawable.cp,R.drawable.kv};
+    Integer[] imgid = {R.drawable.vv, R.drawable.nd, R.drawable.ng, R.drawable.cp, R.drawable.kv};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -1,4 +1,4 @@
-package com.example.sdjic;
+package com.example.sdjic.support;
 
 import android.app.DatePickerDialog;
 import android.app.Dialog;
