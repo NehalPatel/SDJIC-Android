@@ -88,4 +88,9 @@ public class MainActivity extends AppCompatActivity {
         i = new Intent(getApplicationContext(), ImageSwitcherActivity.class);
         startActivity(i);
     }
+
+    public void onTextWatcherClick(View view) {
+        i = new Intent(getApplicationContext(), TextWatcherActivity.class);
+        startActivity(i);
+    }
 }
