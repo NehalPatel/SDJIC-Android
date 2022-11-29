@@ -10,11 +10,10 @@
         android:theme="@style/Theme.SDJIC">
         <activity
             android:name=".ImageSliderActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+            android:exported="false" />
+        <activity
+            android:name=".TextWatcherActivity"
+            android:exported="false" />
         <activity
             android:name=".ImageSwitcherActivity"
             android:exported="false" />
