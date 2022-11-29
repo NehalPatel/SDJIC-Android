@@ -88,4 +88,9 @@ public class MainActivity extends AppCompatActivity {
         i = new Intent(getApplicationContext(), ImageSwitcherActivity.class);
         startActivity(i);
     }
+
+    public void onImageSliderClick(View view) {
+        i = new Intent(getApplicationContext(), ImageSliderActivity.class);
+        startActivity(i);
+    }
 }
