@@ -16,6 +16,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    public void onAppBarButtonClick(View view) {
+        i = new Intent(getApplicationContext(), AppBarActivity.class);
+        startActivity(i);
+    }
+
+    public void onOrientationButtonClick(View view) {
+        i = new Intent(getApplicationContext(), OrientationActivity.class);
+        startActivity(i);
+    }
+
     public void onToastButtonClick(View view){
         i = new Intent(getApplicationContext(), ToastDemoActivity.class);
         startActivity(i);
