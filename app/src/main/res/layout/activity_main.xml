@@ -25,21 +25,22 @@
                 android:src="@drawable/sdjic" />
 
             <GridLayout
-                android:columnCount="2"
-                android:rowCount="3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="3">
 
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_columnWeight="1">
+
                     <Button
                         android:id="@+id/btnAppBar"
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
-                        android:onClick="onAppBarButtonClick"
                         android:layout_marginRight="5dp"
+                        android:onClick="onAppBarButtonClick"
                         android:text="Application Bar" />
                 </LinearLayout>
 
@@ -47,12 +48,13 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_columnWeight="1">
+
                     <Button
                         android:id="@+id/btnOrientation"
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
-                        android:onClick="onOrientationButtonClick"
                         android:layout_marginLeft="5dp"
+                        android:onClick="onOrientationButtonClick"
                         android:text="Orientation \nDemo" />
                 </LinearLayout>
 
@@ -60,12 +62,13 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_columnWeight="1">
+
                     <Button
                         android:id="@+id/buttonToastDemo"
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
-                        android:onClick="onToastButtonClick"
                         android:layout_marginRight="5dp"
+                        android:onClick="onToastButtonClick"
                         android:text="Toast Demo" />
                 </LinearLayout>
 
@@ -73,12 +76,13 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_columnWeight="1">
+
                     <Button
                         android:id="@+id/buttonCustomToastDemo"
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
-                        android:onClick="onCustomToastButtonClick"
                         android:layout_marginLeft="5dp"
+                        android:onClick="onCustomToastButtonClick"
                         android:text="Custom Toast \nDemo" />
                 </LinearLayout>
 
@@ -87,12 +91,13 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_columnWeight="1">
+
                     <Button
                         android:id="@+id/buttonToggleButtonDemo"
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
-                        android:onClick="onToggleButtonClick"
                         android:layout_marginRight="5dp"
+                        android:onClick="onToggleButtonClick"
                         android:text="Toggle Button \nDemo" />
                 </LinearLayout>
 
@@ -100,12 +105,13 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_columnWeight="1">
+
                     <Button
                         android:id="@+id/buttonCheckBoxDemo"
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
-                        android:onClick="onCheckboxButtonClick"
                         android:layout_marginLeft="5dp"
+                        android:onClick="onCheckboxButtonClick"
                         android:text="Check Box \nDemo" />
                 </LinearLayout>
 
@@ -113,6 +119,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_columnWeight="1">
+
                     <Button
                         android:id="@+id/btnSpinner"
                         android:layout_width="match_parent"
@@ -140,6 +147,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_columnWeight="1">
+
                     <Button
                         android:id="@+id/btnListView"
                         android:layout_width="match_parent"
@@ -153,6 +161,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_columnWeight="1">
+
                     <Button
                         android:id="@+id/btnCListView"
                         android:layout_width="match_parent"
@@ -166,6 +175,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_columnWeight="1">
+
                     <Button
                         android:id="@+id/btnDTPicker"
                         android:layout_width="match_parent"
@@ -179,6 +189,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_columnWeight="1">
+
                     <Button
                         android:id="@+id/btnTPicker"
                         android:layout_width="match_parent"
@@ -192,6 +203,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_columnWeight="1">
+
                     <Button
                         android:id="@+id/btnProgressBar"
                         android:layout_width="match_parent"
@@ -205,6 +217,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_columnWeight="1">
+
                     <Button
                         android:id="@+id/btnVerticalScrollView"
                         android:layout_width="match_parent"
@@ -218,6 +231,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_columnWeight="1">
+
                     <Button
                         android:id="@+id/btnHorizontalScrollView"
                         android:layout_width="match_parent"
@@ -231,6 +245,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_columnWeight="1">
+
                     <Button
                         android:id="@+id/btnImageSwitcher"
                         android:layout_width="match_parent"
@@ -244,8 +259,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_columnWeight="1">
+
                     <Button
-                        android:textColor="#FF0000"
                         android:id="@+id/btnImageSlider"
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
@@ -258,6 +273,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_columnWeight="1">
+
                     <Button
                         android:id="@+id/btnTextWatcher"
                         android:layout_width="match_parent"
@@ -265,6 +281,48 @@
                         android:layout_marginLeft="5dp"
                         android:onClick="onTextWatcherClick"
                         android:text="Text \nWatcher" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1">
+
+                    <Button
+                        android:id="@+id/btnAutoCompletetxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:onClick="onActvClick"
+                        android:text="Auto Complete TextView" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1">
+
+                    <Button
+                        android:id="@+id/btnTabLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:onClick="onTabLayoutClick"
+                        android:text="Tab Layout" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1">
+
+                    <Button
+                        android:id="@+id/btnframeLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:onClick="onFrameLayoutClick"
+                        android:text="FrameLayout" />
                 </LinearLayout>
 
             </GridLayout>
