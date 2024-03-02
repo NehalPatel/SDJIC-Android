@@ -5,10 +5,13 @@
     android:layout_height="match_parent"
     tools:context=".MovieFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Movie Fragment"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp" />
 
 </FrameLayout>
