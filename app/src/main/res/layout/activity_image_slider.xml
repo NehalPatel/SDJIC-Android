@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".ImageSliderActivity">
 
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/ViewPage"
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/ViewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </RelativeLayout>

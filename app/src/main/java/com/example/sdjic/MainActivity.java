@@ -26,40 +26,37 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-    public void onToastButtonClick(View view){
+    public void onToastButtonClick(View view) {
         i = new Intent(getApplicationContext(), ToastDemoActivity.class);
         startActivity(i);
     }
 
-    public void onCustomToastButtonClick(View view){
+    public void onCustomToastButtonClick(View view) {
         i = new Intent(getApplicationContext(), CustomToastActivity.class);
         startActivity(i);
     }
 
-    public void onToggleButtonClick(View view){
+    public void onToggleButtonClick(View view) {
         i = new Intent(getApplicationContext(), ToggleButtonActivity.class);
         startActivity(i);
     }
 
-    public void onCheckboxButtonClick(View view){
+    public void onCheckboxButtonClick(View view) {
         i = new Intent(getApplicationContext(), CheckBoxActivity.class);
         startActivity(i);
     }
 
-    public void onAlertButtonOnClick(View view)
-    {
+    public void onAlertButtonOnClick(View view) {
         i = new Intent(getApplicationContext(), AlertDialogActivity.class);
         startActivity(i);
     }
 
-    public void onSpinnerButtonClick(View view)
-    {
+    public void onSpinnerButtonClick(View view) {
         i = new Intent(getApplicationContext(), SpinnerActivity.class);
         startActivity(i);
     }
 
-    public void onListViewButtonClick(View view)
-    {
+    public void onListViewButtonClick(View view) {
         i = new Intent(getApplicationContext(), ListActivity.class);
         startActivity(i);
     }
@@ -106,6 +103,21 @@ public class MainActivity extends AppCompatActivity {
 
     public void onTextWatcherClick(View view) {
         i = new Intent(getApplicationContext(), TextWatcherActivity.class);
+        startActivity(i);
+    }
+
+    public void onActvClick(View view) {
+        i = new Intent(getApplicationContext(), ActvActivity.class);
+        startActivity(i);
+    }
+
+    public void onTabLayoutClick(View view) {
+        i = new Intent(getApplicationContext(), TabLayoutActivity.class);
+        startActivity(i);
+    }
+
+    public void onFrameLayoutClick(View view) {
+        i = new Intent(getApplicationContext(), FrameLayoutActivity.class);
         startActivity(i);
     }
 }
