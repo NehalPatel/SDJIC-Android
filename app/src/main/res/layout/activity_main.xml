@@ -245,7 +245,6 @@
                     android:layout_height="match_parent"
                     android:layout_columnWeight="1">
                     <Button
-                        android:textColor="#FF0000"
                         android:id="@+id/btnImageSlider"
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
