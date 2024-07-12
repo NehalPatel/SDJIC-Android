@@ -7,7 +7,7 @@ import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
-import androidx.viewpager2.widget.ViewPager2;
+import androidx.viewpager.widget.ViewPager;
 
 import com.example.sdjic.R;
 
@@ -15,12 +15,12 @@ public class ImageAdapter extends PagerAdapter {
 
     Context mContext;
 
-    private int[] sliderImageId = new int[]{
-            R.drawable.vv, R.drawable.nd, R.drawable.ng, R.drawable.kv, R.drawable.cp,
-    };
+    private final int[] sliderImageId;
 
-    public ImageAdapter(Context context) {
+
+    public ImageAdapter(Context context, int[] images) {
         this.mContext = context;
+        this.sliderImageId = images;
     }
 
     @Override
@@ -35,7 +35,9 @@ public class ImageAdapter extends PagerAdapter {
 
     @Override
     public void destroyItem(@NonNull ViewGroup container, int position, @NonNull Object object) {
-        container.removeView((ImageView) object);
+
+        ((ViewPager) container).removeView((ImageView) object);
+
     }
 
     @NonNull
