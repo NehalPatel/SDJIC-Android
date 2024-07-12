@@ -19,7 +19,7 @@ public class AlertDialogActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alert_dialog);
 
-        closeButton = (Button) findViewById(R.id.btnClose);
+        closeButton = findViewById(R.id.btnClose);
         builder = new AlertDialog.Builder(this);
     }
 

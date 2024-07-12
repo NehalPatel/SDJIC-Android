@@ -17,8 +17,10 @@ public class ImageSliderActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_image_slider);
 
+
         viewPager = findViewById(R.id.viewPager);
         ImageAdapter adapter = new ImageAdapter(this, images);
         viewPager.setAdapter(adapter);
+
     }
 }

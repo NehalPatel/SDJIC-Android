@@ -17,6 +17,7 @@ public class ImageAdapter extends PagerAdapter {
 
     private final int[] sliderImageId;
 
+
     public ImageAdapter(Context context, int[] images) {
         this.mContext = context;
         this.sliderImageId = images;
@@ -34,7 +35,9 @@ public class ImageAdapter extends PagerAdapter {
 
     @Override
     public void destroyItem(@NonNull ViewGroup container, int position, @NonNull Object object) {
+
         ((ViewPager) container).removeView((ImageView) object);
+
     }
 
     @NonNull

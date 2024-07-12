@@ -9,6 +9,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SDJIC">
         <activity
+            android:name=".FrameLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TabLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActvActivity"
+            android:exported="false" />
+        <activity
             android:name=".OrientationActivity"
             android:exported="false">
             <meta-data
